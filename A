@@ -1,0 +1,14 @@
+def find_next_element(lst, index):
+    if len(lst) >= 5:  # بررسی طول لیست
+        print("عنصر پنجم:", lst[4])
+        print("عنصر بعد از پنجم:", lst[5 % len(lst)])
+        if index < len(lst):
+            print(f"عنصر {index}ام:", lst[index])
+        else:
+            print("اندیس وارد شده بیشتر از طول لیست است.")
+    else:
+        print("طول لیست کمتر از ۵ است. عنصر اول:", lst[0])
+
+# مثال استفاده:
+my_list = [1, 2, 3, 4, 5, 6, 7]
+find_next_element(my_list, 3)  # در این مثال، عنصر سوم از لیست خروجی داده می‌شود.
