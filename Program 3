@@ -1,0 +1,22 @@
+poly1 = LinkedList()
+poly1.append(3, 2)
+poly1.append(5, 1)
+poly1.append(6, 0)
+
+poly2 = LinkedList()
+poly2.append(6, 1)
+poly2.append(4, 0)
+
+print("Polynomial 1:")
+poly1.display()
+
+print("Polynomial 2:")
+poly2.display()
+
+
+result_add = add_polynomials(poly1, poly2)
+print("Sum of Polynomials:")
+
+result_mul = multiply_polynomials(poly1, poly2)
+print("Product of Polynomials:")
+result_mul.display()
